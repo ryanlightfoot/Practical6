@@ -37,8 +37,14 @@ public class MainActivity extends AppCompatActivity{
         @Override
         public void onClick (View v) //The sound starts when user presses
         {
+
             soundName = "Crickets";
+
             mpCricket.start();
+
+            start.setEnabled(false);
+            stop.setEnabled(true); //Enable the sound manipulation buttons
+            pause.setEnabled(true);
         }
     };
 
@@ -48,7 +54,12 @@ public class MainActivity extends AppCompatActivity{
         public void onClick (View v) //The sound starts when user presses
         {
             soundName = "Rain";
+
             mpRain.start();
+
+            start.setEnabled(false);
+            stop.setEnabled(true); //Enable the sound manipulation buttons
+            pause.setEnabled(true);
         }
     };
 
@@ -65,6 +76,9 @@ public class MainActivity extends AppCompatActivity{
             {
                 mpRain.stop();
             }
+            start.setEnabled(false);
+            stop.setEnabled(false); //manipulate the sound manipulation buttons
+            pause.setEnabled(false);
         }
     };
 
@@ -81,6 +95,9 @@ public class MainActivity extends AppCompatActivity{
             {
                 mpRain.pause();
             }
+            start.setEnabled(true);
+            stop.setEnabled(true); //manipulate the sound manipulation buttons
+            pause.setEnabled(false);
         }
     };
 
@@ -97,6 +114,9 @@ public class MainActivity extends AppCompatActivity{
             {
                 mpRain.start();
             }
+            start.setEnabled(false);
+            stop.setEnabled(true); //manipulate the sound manipulation buttons
+            pause.setEnabled(true);
         }
     };
 

@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="412dp"
         android:layout_height="677dp"
         android:layout_marginTop="20dp"
@@ -15,8 +16,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/btnRain"
@@ -34,26 +37,33 @@
     <LinearLayout
         android:layout_width="415dp"
         android:layout_height="80dp"
+        android:layout_marginBottom="22dp"
         android:gravity="center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteY="651dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
             android:id="@+id/btnStop"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="@string/stop" />
 
         <Button
             android:id="@+id/btnPlay"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="@string/play" />
 
         <Button
             android:id="@+id/btnPause"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="@string/pause" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
