@@ -6,13 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="677dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/btnRain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rain" />
+
+        <Button
+            android:id="@+id/btnCrickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crickets" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="651dp">
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/play" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pause" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Practical 6</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+    <string name="rain">Play rain and thunder ambience</string>
+    <string name="crickets">Play Crickets and insects ambience</string>
 </resources>
